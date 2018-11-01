@@ -9,6 +9,7 @@ import {StatusBar} from '@ionic-native/status-bar/ngx';
 import {AppComponent} from './app.component';
 import {AppRoutingModule} from './app-routing.module';
 import {Vibration} from '@ionic-native/vibration/ngx';
+import {SocialSharing} from '@ionic-native/social-sharing/ngx';
 
 @NgModule({
     declarations: [AppComponent],
@@ -18,7 +19,8 @@ import {Vibration} from '@ionic-native/vibration/ngx';
         StatusBar,
         SplashScreen,
         {provide: RouteReuseStrategy, useClass: IonicRouteStrategy},
-        Vibration
+        Vibration,
+        SocialSharing
     ],
     bootstrap: [AppComponent]
 })
