@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Vibration} from '@ionic-native/vibration/ngx';
 
 @Component({
   selector: 'app-home',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  constructor(private vibration: Vibration){}
+
+  vibrate() {
+      this.vibration.vibrate(1000);
+  }
 }
